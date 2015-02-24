@@ -27,40 +27,6 @@ TcpClient::TcpClient(string tcpServerName, int tcpServerPort)
 	}
 }
 
-//string TcpClient::readLine()
-//{
-//	string line;
-//	try
-//	{
-//		boost::asio::streambuf buf;
-//		boost::asio::read_until((*socketPtr), buf, '\n');
-//		istream is(&buf);
-//		getline(is, line);
-//	}
-//	catch(exception &e)
-//	{
-//		std::cerr << "Exception: " << e.what() << endl;
-//	}
-//	return line;
-//}
-
-//string TcpClient::readUntil(string endingRegex)
-//{
-//	string line;
-//	try
-//	{
-//		boost::asio::streambuf buf;
-//		boost::asio::read_until((*socketPtr), buf, endingRegex);
-//		istream is(&buf);
-//		is >> line;
-//	}
-//	catch(exception &e)
-//	{
-//		std::cerr << "Exception: " << e.what() << endl;
-//	}
-//	return line;
-//}
-
 void TcpClient::write(string message)
 {
 	try

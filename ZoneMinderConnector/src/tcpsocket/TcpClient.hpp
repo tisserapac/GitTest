@@ -19,12 +19,6 @@ using namespace std;
 namespace tcpsocket
 {
 
-/*struct ReceivedDataStruct
-{
-	char* dataPtr;
-	size_t length;
-};*/
-
 class TcpClient
 {
 private:

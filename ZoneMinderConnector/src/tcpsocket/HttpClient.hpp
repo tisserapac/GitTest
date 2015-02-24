@@ -20,9 +20,6 @@ namespace tcpsocket {
 
 class HttpClient {
 private:
-	//boost::asio::io_service* ioServicePtr;
-	//boost::asio::ip::tcp::resolver* resolverPtr;
-	//boost::asio::ip::tcp::resolver::iterator endpoint;
 	boost::asio::ip::tcp::socket *_socket;
 	boost::asio::streambuf _streambufTemp;
 	boost::array<char, 2048> _buffer;

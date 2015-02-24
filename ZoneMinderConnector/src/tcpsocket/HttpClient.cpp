@@ -139,7 +139,6 @@ ReceivedDataStruct* HttpClient::readBytes()
 		try
 		{
 			len = (*_socket).read_some(boost::asio::buffer(_buffer), error);
-			//cout << len << endl;
 		} catch (exception &e) {
 			cerr << "HttpClient:readBytes: Exception: " << e.what() << endl;
 		}

@@ -11,7 +11,7 @@ namespace zoneminder {
 
 ZoneminderClient::ZoneminderClient() : VmsClient()
 {
-	_pDecoderPtr = NULL;	//Initialized in the init() function
+	_pDecoderPtr = NULL;	//This is initialized in the init() function
 	_pHttpClientPtr = NULL;	//Initialized in the init() function
 	_sUsername = "";
 	_sPassword = "";
